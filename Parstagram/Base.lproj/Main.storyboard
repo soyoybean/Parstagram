@@ -82,6 +82,59 @@
                     <view key="view" contentMode="scaleToFill" id="ANV-Te-wBp" customClass="FeedViewCo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pvW-Ez-LU8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="417" id="RN9-nj-Kjw" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="417"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RN9-nj-Kjw" id="a35-yg-4LN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="417"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNU-ab-iWq">
+                                                    <rect key="frame" x="8" y="8" width="359" height="373"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="soy0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-54-5JG">
+                                                    <rect key="frame" x="8" y="389" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I love getting likes!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75H-zq-hNu">
+                                                    <rect key="frame" x="58" y="389" width="183" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="75H-zq-hNu" secondAttribute="bottom" constant="8" id="530-CN-zC6"/>
+                                                <constraint firstItem="75H-zq-hNu" firstAttribute="top" secondItem="qNU-ab-iWq" secondAttribute="bottom" constant="8" id="77S-I2-CDB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="75H-zq-hNu" secondAttribute="bottom" constant="-3" id="ACZ-ig-vTP"/>
+                                                <constraint firstItem="75H-zq-hNu" firstAttribute="baseline" secondItem="hVH-54-5JG" secondAttribute="firstBaseline" id="AlX-hJ-ENx"/>
+                                                <constraint firstAttribute="trailing" secondItem="75H-zq-hNu" secondAttribute="trailing" constant="8" id="E97-pp-f8o"/>
+                                                <constraint firstItem="75H-zq-hNu" firstAttribute="centerY" secondItem="hVH-54-5JG" secondAttribute="centerY" id="INq-RF-i5k"/>
+                                                <constraint firstItem="75H-zq-hNu" firstAttribute="leading" secondItem="hVH-54-5JG" secondAttribute="trailing" constant="8" id="OAq-0W-h8b"/>
+                                                <constraint firstItem="qNU-ab-iWq" firstAttribute="leading" secondItem="a35-yg-4LN" secondAttribute="leading" constant="8" id="OSJ-Y5-m18"/>
+                                                <constraint firstItem="hVH-54-5JG" firstAttribute="top" secondItem="qNU-ab-iWq" secondAttribute="bottom" constant="8" id="YSI-Tr-08C"/>
+                                                <constraint firstItem="qNU-ab-iWq" firstAttribute="trailing" secondItem="a35-yg-4LN" secondAttribute="trailing" constant="8" id="ZJK-mk-9YP"/>
+                                                <constraint firstItem="qNU-ab-iWq" firstAttribute="top" secondItem="a35-yg-4LN" secondAttribute="top" constant="8" id="pLc-j0-bGM"/>
+                                                <constraint firstItem="hVH-54-5JG" firstAttribute="leading" secondItem="a35-yg-4LN" secondAttribute="leading" constant="8" id="wkb-9M-fhR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="75H-zq-hNu" id="pNP-2w-gWV"/>
+                                            <outlet property="photoView" destination="qNU-ab-iWq" id="72q-XA-Yjz"/>
+                                            <outlet property="usernameLabel" destination="hVH-54-5JG" id="zfM-Ah-48c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Nl8-UB-cqg"/>
                     </view>
@@ -92,6 +145,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="pvW-Ez-LU8" id="1Bf-rw-GeL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trY-9p-toE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
