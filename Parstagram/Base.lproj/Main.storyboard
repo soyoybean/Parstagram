@@ -95,35 +95,35 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="417"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qNU-ab-iWq">
-                                                    <rect key="frame" x="8" y="8" width="359" height="373"/>
+                                                <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qNU-ab-iWq">
+                                                    <rect key="frame" x="8" y="8" width="0.0" height="0.0"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="qNU-ab-iWq" secondAttribute="height" multiplier="359:373" id="CgB-3T-vRo"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="soy0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-54-5JG">
-                                                    <rect key="frame" x="8" y="389" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love getting likes!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75H-zq-hNu">
+                                                    <rect key="frame" x="-8" y="16" width="0.0" height="393"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I love getting likes!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75H-zq-hNu">
-                                                    <rect key="frame" x="58" y="389" width="183" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="soy0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVH-54-5JG">
+                                                    <rect key="frame" x="8" y="350" width="37" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="75H-zq-hNu" secondAttribute="bottom" constant="8" id="530-CN-zC6"/>
-                                                <constraint firstItem="75H-zq-hNu" firstAttribute="top" secondItem="qNU-ab-iWq" secondAttribute="bottom" constant="8" id="77S-I2-CDB"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="75H-zq-hNu" secondAttribute="bottom" constant="-3" id="ACZ-ig-vTP"/>
-                                                <constraint firstItem="75H-zq-hNu" firstAttribute="baseline" secondItem="hVH-54-5JG" secondAttribute="firstBaseline" id="AlX-hJ-ENx"/>
-                                                <constraint firstAttribute="trailing" secondItem="75H-zq-hNu" secondAttribute="trailing" constant="8" id="E97-pp-f8o"/>
-                                                <constraint firstItem="75H-zq-hNu" firstAttribute="centerY" secondItem="hVH-54-5JG" secondAttribute="centerY" id="INq-RF-i5k"/>
-                                                <constraint firstItem="75H-zq-hNu" firstAttribute="leading" secondItem="hVH-54-5JG" secondAttribute="trailing" constant="8" id="OAq-0W-h8b"/>
-                                                <constraint firstItem="qNU-ab-iWq" firstAttribute="leading" secondItem="a35-yg-4LN" secondAttribute="leading" constant="8" id="OSJ-Y5-m18"/>
-                                                <constraint firstItem="hVH-54-5JG" firstAttribute="top" secondItem="qNU-ab-iWq" secondAttribute="bottom" constant="8" id="YSI-Tr-08C"/>
-                                                <constraint firstItem="qNU-ab-iWq" firstAttribute="trailing" secondItem="a35-yg-4LN" secondAttribute="trailing" constant="8" id="ZJK-mk-9YP"/>
-                                                <constraint firstItem="qNU-ab-iWq" firstAttribute="top" secondItem="a35-yg-4LN" secondAttribute="top" constant="8" id="pLc-j0-bGM"/>
-                                                <constraint firstItem="hVH-54-5JG" firstAttribute="leading" secondItem="a35-yg-4LN" secondAttribute="leading" constant="8" id="wkb-9M-fhR"/>
+                                                <constraint firstItem="qNU-ab-iWq" firstAttribute="leading" secondItem="a35-yg-4LN" secondAttribute="leading" constant="8" id="G3V-ss-AcS"/>
+                                                <constraint firstAttribute="trailing" secondItem="qNU-ab-iWq" secondAttribute="trailing" constant="8" id="H66-Th-q0s"/>
+                                                <constraint firstItem="75H-zq-hNu" firstAttribute="leading" secondItem="hVH-54-5JG" secondAttribute="trailing" id="M9g-5J-4ob"/>
+                                                <constraint firstItem="75H-zq-hNu" firstAttribute="top" secondItem="qNU-ab-iWq" secondAttribute="bottom" constant="8" id="Yk6-91-3GP"/>
+                                                <constraint firstItem="qNU-ab-iWq" firstAttribute="top" secondItem="a35-yg-4LN" secondAttribute="top" constant="8" id="ZDS-CO-6ou"/>
+                                                <constraint firstItem="hVH-54-5JG" firstAttribute="leading" secondItem="a35-yg-4LN" secondAttribute="leading" constant="8" id="g6F-do-jdn"/>
+                                                <constraint firstAttribute="trailing" secondItem="75H-zq-hNu" secondAttribute="trailing" constant="8" id="imJ-Wf-lMp"/>
+                                                <constraint firstAttribute="bottom" secondItem="75H-zq-hNu" secondAttribute="bottom" constant="8" id="qqE-UJ-5I5"/>
+                                                <constraint firstItem="hVH-54-5JG" firstAttribute="top" secondItem="qNU-ab-iWq" secondAttribute="bottom" constant="8" id="wsm-5e-djm"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
