@@ -101,8 +101,8 @@
                                                         <constraint firstAttribute="width" secondItem="qNU-ab-iWq" secondAttribute="height" multiplier="359:373" id="CgB-3T-vRo"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love getting likes!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75H-zq-hNu">
-                                                    <rect key="frame" x="-8" y="16" width="0.0" height="393"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I love getting likes!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75H-zq-hNu">
+                                                    <rect key="frame" x="53" y="350" width="322" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -117,11 +117,10 @@
                                             <constraints>
                                                 <constraint firstItem="qNU-ab-iWq" firstAttribute="leading" secondItem="a35-yg-4LN" secondAttribute="leading" constant="8" id="G3V-ss-AcS"/>
                                                 <constraint firstAttribute="trailing" secondItem="qNU-ab-iWq" secondAttribute="trailing" constant="8" id="H66-Th-q0s"/>
-                                                <constraint firstItem="75H-zq-hNu" firstAttribute="leading" secondItem="hVH-54-5JG" secondAttribute="trailing" id="M9g-5J-4ob"/>
+                                                <constraint firstItem="75H-zq-hNu" firstAttribute="leading" secondItem="hVH-54-5JG" secondAttribute="trailing" constant="8" id="M9g-5J-4ob"/>
                                                 <constraint firstItem="75H-zq-hNu" firstAttribute="top" secondItem="qNU-ab-iWq" secondAttribute="bottom" constant="8" id="Yk6-91-3GP"/>
                                                 <constraint firstItem="qNU-ab-iWq" firstAttribute="top" secondItem="a35-yg-4LN" secondAttribute="top" constant="8" id="ZDS-CO-6ou"/>
                                                 <constraint firstItem="hVH-54-5JG" firstAttribute="leading" secondItem="a35-yg-4LN" secondAttribute="leading" constant="8" id="g6F-do-jdn"/>
-                                                <constraint firstAttribute="trailing" secondItem="75H-zq-hNu" secondAttribute="trailing" constant="8" id="imJ-Wf-lMp"/>
                                                 <constraint firstAttribute="bottom" secondItem="75H-zq-hNu" secondAttribute="bottom" constant="8" id="qqE-UJ-5I5"/>
                                                 <constraint firstItem="hVH-54-5JG" firstAttribute="top" secondItem="qNU-ab-iWq" secondAttribute="bottom" constant="8" id="wsm-5e-djm"/>
                                             </constraints>
@@ -204,7 +203,7 @@
         <!--Navigation Controller-->
         <scene sceneID="who-mj-UR7">
             <objects>
-                <navigationController modalPresentationStyle="fullScreen" id="qC2-0z-gpp" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" modalPresentationStyle="fullScreen" id="qC2-0z-gpp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hxz-za-gFh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
