@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		015331D4354406BC216214BE /* Pods_Parstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD88FBD264635C95C6B5125 /* Pods_Parstagram.framework */; };
+		12054809240A19650038DC44 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12054808240A19650038DC44 /* CommentCell.swift */; };
 		127CD52524074E85009E3951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127CD52424074E85009E3951 /* AppDelegate.swift */; };
 		127CD52724074E85009E3951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127CD52624074E85009E3951 /* SceneDelegate.swift */; };
 		127CD52C24074E85009E3951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127CD52A24074E85009E3951 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12054808240A19650038DC44 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		127CD52124074E85009E3951 /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		127CD52424074E85009E3951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		127CD52624074E85009E3951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				12BF9A92240769D3001976CF /* FeedViewController.swift */,
 				12BF9A9424077EAC001976CF /* CameraViewController.swift */,
 				12BF9A962407A3FE001976CF /* PostCell.swift */,
+				12054808240A19650038DC44 /* CommentCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				12BF9A93240769D4001976CF /* FeedViewController.swift in Sources */,
 				127CD52724074E85009E3951 /* SceneDelegate.swift in Sources */,
 				12BF9A972407A3FE001976CF /* PostCell.swift in Sources */,
+				12054809240A19650038DC44 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
