@@ -21,10 +21,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            self.window = UIWindow(windowScene: windowScene)
-            self.window?.rootViewController =  main.instantiateViewController(withIdentifier: "FeedNavigationController")
-            print("window %@", window)
-            self.window?.makeKeyAndVisible()
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            window?.rootViewController = feedNavigationController
+            
+            
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            self.window = UIWindow(windowScene: windowScene)
+//            self.window?.rootViewController =  main.instantiateViewController(withIdentifier: "FeedNavigationController")
+//            print("window %@", window)
+//            self.window?.makeKeyAndVisible()
         }
         
     }
